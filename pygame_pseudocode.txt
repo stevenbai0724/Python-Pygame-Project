@@ -1,0 +1,56 @@
+Obtain the necessary modules: Pygame and time
+Make the dimensions for the game
+name the window as "Pong by Steven Bai"
+Get the colours needed and define them - green/light green, red/light red, blue/light blue, black and white
+Import images for 3 "paddles", a ball, a black and yellow design for the main menu and a hovering black arrow 
+
+
+while the game is running(gameExit == False):
+pause any other music that is playing 
+import and play music (Main Menu theme from Super Smash Bros. Brawl)
+create a main menu page that allows user to click 3 buttons: single play(green), multiplay(blue), quit(red)
+display "pong" in big, bold white letters
+display "created by Steven Bai" at the very bottom of the screen
+create single play intro screen if user clicks single play, on that screen give instuctions and 2 buttons - play/main menu
+create multi play intro screen if user clicks multi play, on that screen give instuctions/controls and 2 bottons - play/main menu
+user will be taken to the actual single/multi player gameplay if they click on "play"
+all buttons are interactive; if the user hovers their mouse over the buttons it will change colour
+a black arrow hovers beside the buttons on the main menu screen
+if user clicks on quit, gameExit = True; quit pygame
+refresh screen and update at 60 frames/sec
+
+
+
+while the game is running(gameExit == False):
+pause any other music that is playing 
+import and play music (Delfino Plaza theme from Super Mario Sunshine)
+create the actual single player gameplay; put the ball and 1 paddle on the lower middle part of the screen and make the background black
+make a score on the top left and a main menu button on the bottom left
+allow the paddle to be moved side to side by arrow keys
+move the ball and let it bounce off the top, left and right of the screen as well as the surface/sides/corners of paddle
+when the ball bounces, multiply the x and y velocity of the ball by -1, making the ball bounce in the opposite angle at which it is coming in 
+give the user a point if the ball hits the top, update the score and display it on the top left 
+loop the game infinitly until the user "dies" by letting the ball hit the bottom of the screen 
+if ball hits bottom, user loses and is given a game over screen with 2 buttons - retry and main menu
+play the Game Over Theme from Super Mario Bros. when the ball hits the wall behind the paddle
+if user clicks retry, start the game again from 0
+if user clicks main menu, go to the main menu
+refresh screen and update at 60 frames/sec
+
+
+while the game is running (gameExit == False):
+pause any other music that is playing 
+import and play music (Final Destination theme from Super Smash Bros. Brawl)
+create the actual multiplayer gameplay; put 2 paddles and the ball on screen and make background blue
+draw a white line to divide the screen in half, making it look like a ping pong table
+create the score on the top of the screen for both players and keep a green main menu button on the bottom left of the screen
+give the paddles and ball coordinates and a velocity
+allow the left paddle (Player 1) to be able to moved up and down with "w" and "s"
+allow the right paddle (PLayer 2) to be moved up and down with arrow keys
+allow the ball to bounce of the top and bottom of the screen in the opposite angle that it's coming in, as well as the surface of the 2 paddles facing inwards/corners 
+display a score on the top of the screen for both players
+if the ball hits the left or right side of the screen behind the corresponding paddle, give one point to the player on the opposite side 
+display a message on the screen saying which player got the point (e.g Player 1 scores!)
+after the message is displayed, wait 1.5 secs before resetting the positions of the paddles and ball
+stop the game when one player has 5 points and display a victory message (e.g Player 2 has won!), display a retry and main menu button
+refresh screen and update at 100 frames/sec , increasing the intensity
